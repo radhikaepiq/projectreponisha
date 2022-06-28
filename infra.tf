@@ -118,7 +118,7 @@ resource "aws_spot_instance_request" "nisha_spotinstance1" {
   spot_type              = "one-time"
   wait_for_fulfillment   = "true"
   subnet_id = aws_subnet.public_subnet.id
-  key_name               = "nishaskey1"
+  key_name               = "nishasalunkekey"
   security_groups = [aws_security_group.Nisha-SG.id]
 }
 
@@ -131,7 +131,7 @@ resource "aws_spot_instance_request" "nisha_spotinstance1" {
  spot_type              = "one-time"
  wait_for_fulfillment   = "true"
  subnet_id = aws_subnet.private_subnet.id
- key_name               = "nishaskey1"
+ key_name               = "nishasalunkekey"
  security_groups = [aws_security_group.Nisha-SG.id]
  }
 
